@@ -26,7 +26,6 @@ jobs:
       - uses: PackagrIO/action-bumpr-node@v0.0.1
         with:
           version_bump_type: major
-          version_metadata_path: ./s3/package.json
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
