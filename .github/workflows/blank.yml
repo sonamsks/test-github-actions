@@ -31,4 +31,5 @@ jobs:
         with:
           version_bump_type: ${{ github.event.inputs.version_bump_type }}
           github_token: ${{ secrets.GITHUB_TOKEN }}
+          version_metadata_path: s3/pacakge.json
       
