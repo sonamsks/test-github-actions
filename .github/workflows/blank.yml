@@ -32,5 +32,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          version_metadata_path: s3/package.json
+          version_metadata_path: ./s3/package.json
       
