@@ -1,0 +1,17 @@
+services:
+  s1:
+    build:
+      context: .
+      dockerfile: Dockerfile_s1
+  s2:
+    build:
+      context: .
+      dockerfile: Dockerfile_s2
+
+  s3:
+    build:
+      context: .
+      dockerfile: Dockerfile_s3
+    ports:
+      - "80:8083"
+  

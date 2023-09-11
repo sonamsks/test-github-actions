@@ -1,0 +1,6 @@
+FROM node
+WORKDIR /usr/src/app 
+COPY ./s1/ .
+RUN npm install 
+expose 8081
+CMD ["node","app.js"]

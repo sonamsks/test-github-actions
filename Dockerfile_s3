@@ -1,0 +1,7 @@
+FROM node
+WORKDIR /usr/src/app 
+COPY ./s3/ .
+RUN npm install 
+RUN npm install axios
+expose 8083
+CMD ["node","app.js"]
