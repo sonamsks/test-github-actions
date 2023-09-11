@@ -25,6 +25,10 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: "Checkout source code"
         uses: "actions/checkout@v3"
+      - name: shell
+        run: ls
+        run: pwd
+        
       - uses: PackagrIO/action-bumpr-node@v0.0.1
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
